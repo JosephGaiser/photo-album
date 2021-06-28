@@ -1,1 +1,1 @@
-rootProject.name = "photoAlbum"
+rootProject.name = "photo-album"

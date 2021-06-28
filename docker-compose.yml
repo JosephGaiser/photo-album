@@ -1,0 +1,11 @@
+version: '3.7'
+
+services:
+  photo-album:
+    image: photo-album
+    stdin_open: true
+    tty: true
+    build:
+      context: .
+    ports:
+      - 8080:8080
