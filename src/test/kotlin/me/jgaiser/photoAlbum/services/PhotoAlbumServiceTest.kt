@@ -42,8 +42,9 @@ class PhotoAlbumServiceTest {
         }
 
         @Test
-        fun `should return empty flux`() {
+        fun `should return message indicating no photos`() {
             StepVerifier.create(photoAlbumService.displayAlbum(albumId))
+                .expectNext("album contained no photos")
                 .verifyComplete()
         }
     }
